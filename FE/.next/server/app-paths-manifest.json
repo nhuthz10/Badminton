@@ -1,0 +1,21 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/change-password/[email]/page": "app/change-password/[email]/page.js",
+  "/forgot-password/page": "app/forgot-password/page.js",
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/register/page": "app/register/page.js",
+  "/tin-tuc/page": "app/tin-tuc/page.js",
+  "/(product)/search/page": "app/(product)/search/page.js",
+  "/(product)/sale-off/page": "app/(product)/sale-off/page.js",
+  "/user/cart/page": "app/user/cart/page.js",
+  "/user/orders/page": "app/user/orders/page.js",
+  "/user/profile/page": "app/user/profile/page.js",
+  "/user/orders/[orderId]/page": "app/user/orders/[orderId]/page.js",
+  "/user/feedback/page": "app/user/feedback/page.js",
+  "/user/favourite/page": "app/user/favourite/page.js",
+  "/tin-tuc/[blogId]/page": "app/tin-tuc/[blogId]/page.js",
+  "/(product)/[productTypeId]/page": "app/(product)/[productTypeId]/page.js",
+  "/(product)/[productTypeId]/[productId]/page": "app/(product)/[productTypeId]/[productId]/page.js",
+  "/login/page": "app/login/page.js"
+}

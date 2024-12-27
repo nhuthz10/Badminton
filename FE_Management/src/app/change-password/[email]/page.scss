@@ -1,0 +1,200 @@
+.change-password-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .bg-gradient {
+    position: absolute;
+    inset: 0;
+
+    .fullImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .change-password-content {
+    position: relative;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/map.png") no-repeat center center;
+    background-size: cover;
+
+    .object1 {
+      height: 100%;
+      width: 300px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .object2 {
+      width: 156px;
+      height: 160px;
+      position: absolute;
+      left: 30%;
+      top: 0;
+    }
+
+    .object3 {
+      width: 475px;
+      height: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .polygon {
+      width: 400px;
+      height: 200px;
+      position: absolute;
+      bottom: 0;
+      right: 25%;
+    }
+
+    .content {
+      position: relative;
+      width: 870px;
+      padding: 6px;
+      border-radius: 8px;
+      background-image: linear-gradient(
+        45deg,
+        #fff9f9 0%,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 0) 75%,
+        #fff9f9 100%
+      );
+
+      .inner {
+        background-color: #fff9;
+        padding: 8rem 2.4rem 8rem 2.4rem;
+        border-radius: 8px;
+        height: 500px;
+
+        backdrop-filter: blur(16px) brightness(1) contrast(1) grayscale(0)
+          hue-rotate(0deg) invert(0) opacity(1) saturate(1) sepia(0);
+        -webkit-backdrop-filter: blur(16px) brightness(1) contrast(1)
+          grayscale(0) hue-rotate(0deg) invert(0) opacity(1) saturate(1)
+          sepia(0);
+
+        .change-password-form-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .change-password-title {
+            font-size: var(--title-fontSize);
+            color: #3e334e;
+            margin-bottom: 20px;
+          }
+          .change-password-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .change-password-wrap-password {
+              height: 10rem;
+              margin-bottom: 16px;
+
+              .change-password-label {
+                font-size: var(--text-fontSize);
+                color: #3e334e;
+                margin-bottom: 6px;
+              }
+              .change-password-password {
+                display: flex;
+                align-items: center;
+                height: 4.5rem;
+                width: 30rem;
+                padding: 0 1rem;
+                border: 1px solid #afa2c3;
+                background-color: var(--white-color);
+                border-radius: 1rem;
+                margin-top: 6px;
+                .change-password-input {
+                  font-size: var(--text-fontSize);
+                  caret-color: var(--primary-color);
+                  outline: none;
+                  border: none;
+                  flex: 1;
+                }
+
+                &:focus-within {
+                  border-color: var(--second-color);
+                }
+                .change-password-password-icon {
+                  font-size: var(--text-fontSize);
+                  margin-right: 12px;
+                }
+              }
+              .errer {
+                margin-top: 6px;
+                color: #bf1650;
+                font-size: var(--text-fontSize);
+
+                &::before {
+                  display: inline;
+                  content: "⚠ ";
+                }
+              }
+              .change-password-icon {
+                font-size: var(--text-fontSize);
+                opacity: 0.4;
+                margin-left: 6px;
+                cursor: pointer;
+              }
+            }
+
+            .change-password-send {
+              background-color: var(--second-color);
+              font-size: var(--text-fontSize);
+              color: #3e334e;
+              font-weight: 600;
+              padding: 0.8rem;
+              height: 5rem;
+              width: 14rem;
+              // margin: auto;
+              border-radius: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .change-password-container {
+    .change-password-content {
+      padding: 0 4rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .change-password-container {
+    .change-password-content {
+      padding: 0 4rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .change-password-container {
+    .change-password-content {
+      padding: 0 4rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .change-password-container {
+    .change-password-content {
+      padding: 0 4rem;
+    }
+  }
+}

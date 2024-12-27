@@ -1,0 +1,82 @@
+.rating-form-container {
+  width: 330px;
+  outline: none;
+  .comment-rating-form {
+    margin: 0;
+    padding: 0;
+
+    textarea {
+      font-size: 16px;
+      width: 100%;
+      min-height: 70px;
+      resize: none;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      outline: none;
+      border-radius: 4px;
+    }
+
+    .comment-rating {
+      font-size: 3.125rem;
+      margin-bottom: 10px;
+      color: gold;
+    }
+
+    .input-wrap-comment {
+      min-height: 180px;
+      .comment-content {
+        font-size: var(--text-fontSize);
+        border-radius: 5px;
+        padding: 10px;
+        min-height: 150px;
+        margin-bottom: 0;
+      }
+    }
+
+    .ctn_send_btn {
+      display: flex;
+      margin-top: 16px;
+      .contain_send_btn {
+        margin-left: auto;
+        font-size: var(--title-small-fontSize);
+        padding: 10px 12px;
+        color: white;
+        border-radius: 10px;
+        background-color: var(--second-color);
+
+        &:hover {
+          background: #f05d40;
+        }
+
+        .send_icon_btn {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .rating-form-container {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rating-form-container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 992px) {
+  .rating-form-container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .rating-form-container {
+    width: 550px;
+  }
+}

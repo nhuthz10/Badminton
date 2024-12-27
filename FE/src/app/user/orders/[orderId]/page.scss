@@ -1,0 +1,110 @@
+.order-detail-container {
+  .order-detail-infor {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-fontSize);
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+
+    .information {
+      margin-bottom: 1rem;
+      h3 {
+        font-size: var(--text-fontSize);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .order-detail-products {
+    justify-content: center;
+
+    .productDetail {
+      display: flex;
+      align-items: center;
+      padding: 1.6rem;
+      background-color: #f4f3f2;
+      border-radius: 5px;
+
+      .thumbnail {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+      }
+
+      .info {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: var(--text-fontSize);
+
+        .infor-name {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 1.4;
+          min-height: 3.5rem;
+          font-size: var(--text-fontSize);
+        }
+
+        p {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+
+  .pay-contact-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .pay-contact {
+      .pay_discount {
+        margin-top: 20px;
+        font-size: var(--text-fontSize);
+        display: flex;
+        flex-direction: column;
+
+        .txt_price {
+          margin-right: 16px;
+          color: #666666;
+        }
+
+        .txt_pay {
+          color: #666666;
+        }
+
+        .pay {
+          display: flex;
+          justify-content: space-between;
+          padding: 2rem 0;
+
+          .price {
+            font-weight: bold;
+          }
+
+          .price_discount {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .btn_contact {
+        margin-top: 20px;
+        display: flex;
+
+        button {
+          font-size: var(--small-fontSize);
+          padding: 10px 20px;
+          font-weight: bold;
+          border-radius: 11px;
+          background-color: #f95926;
+          color: white;
+        }
+      }
+    }
+  }
+}

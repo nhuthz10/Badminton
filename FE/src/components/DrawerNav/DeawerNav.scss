@@ -1,0 +1,28 @@
+.drawer-nav-container {
+  width: 220px;
+  .drawer-nav-title {
+    text-align: center;
+    background-color: var(--primary-color);
+    font-size: var(--title-small-fontSize);
+    padding: 10px 0;
+    color: var(--white-color);
+    font-weight: 700;
+  }
+  .drawer-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    font-size: var(--text-fontSize);
+    font-weight: 600;
+
+    .drawer-nav-item-icon {
+      font-size: var(--title-small-fontSize);
+      font-weight: 600;
+      margin-left: 2px;
+      transition: transform 0.1s linear;
+    }
+    .drawer-nav-item-icon.open {
+      transform: rotate(180deg);
+    }
+  }
+}

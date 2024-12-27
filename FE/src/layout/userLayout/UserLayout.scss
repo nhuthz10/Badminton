@@ -1,0 +1,52 @@
+.layout-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .layout-content {
+    padding: 12rem 2rem 0 2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .layout-container {
+    .layout-content {
+      padding: 13rem 2rem 0 1 2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-container {
+    .layout-content {
+      padding: 14rem 3rem 0 3rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .layout-container {
+    .layout-content {
+      padding: 14rem 2rem 0 2rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .layout-container {
+    .layout-content {
+      padding: 15rem 4rem 0 4rem;
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .layout-container {
+    .layout-content {
+      width: 1536px;
+      align-self: center;
+    }
+  }
+}

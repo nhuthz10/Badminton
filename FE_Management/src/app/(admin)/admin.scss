@@ -1,0 +1,183 @@
+.model-add-update {
+  padding: 0 10px 0 10px;
+  width: 800px;
+
+  .model-add-update-header {
+    margin: 20px 0 30px 0;
+    font-size: var(--title-fontSize);
+    font-weight: bold;
+  }
+
+  .modal-add-update-input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .modal-add-update-input-flex {
+      flex: 1;
+      min-width: 100%;
+
+      .date-picker {
+        width: 100%;
+        font-size: var(--text-fontSize);
+        background-color: #f0f0f0;
+        color: rgba(0, 0, 0, 0.6);
+        height: 45px;
+        margin-top: 15px;
+
+        .MuiSvgIcon-root {
+          font-size: 2.5rem;
+          color: var(--second-color);
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+          border: none !important;
+        }
+      }
+
+      .date-picker-voucher {
+        width: 100%;
+        font-size: var(--text-fontSize);
+        background-color: #f0f0f0;
+        color: rgba(0, 0, 0, 0.6);
+        height: 45px;
+        margin-top: 15px;
+
+        .MuiSvgIcon-root {
+          font-size: 2.5rem;
+          color: var(--second-color);
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        .MuiOutlinedInput-notchedOutline {
+          border: none !important;
+        }
+      }
+
+      .error-message-flex {
+        color: red;
+        font-size: var(--small-fontSize);
+        margin-top: 1rem;
+      }
+    }
+
+    .modal-add-update-input {
+      height: 10rem;
+      margin-bottom: 1rem;
+
+      .MuiSelect-select {
+        padding: 12px 32px 12px 12px;
+      }
+
+      .MuiInputBase-input {
+        padding: 12px;
+      }
+
+      .modal-add-update-input-label {
+        font-size: var(--text-fontSize);
+        font-weight: bold;
+        color: #00000099;
+      }
+
+      .modal-add-update-input-text-field {
+        margin-top: 15px;
+        height: 45px;
+        width: 100%;
+        font-size: var(--text-fontSize);
+      }
+
+      .error-message {
+        color: red;
+        font-size: var(--small-fontSize);
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .modal-add-update-input-label {
+    font-size: var(--text-fontSize);
+    font-weight: bold;
+    color: #00000099;
+  }
+
+  .btn {
+    width: 15rem;
+    border-radius: 10px;
+    font-size: var(--text-fontSize);
+    background-color: #022e6c;
+  }
+}
+
+@media (min-width: 576px) {
+  .model-add-update {
+    padding: 0 10px 0 10px;
+
+    .modal-add-update-input-wrapper {
+      gap: 30px;
+      margin-bottom: 1rem;
+
+      .modal-add-update-input-flex {
+        min-width: 0;
+      }
+      .modal-add-update-input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .model-add-update {
+    padding: 0 20px 0 20px;
+
+    .modal-add-update-input-wrapper {
+      gap: 30px;
+      margin-bottom: 1rem;
+
+      .modal-add-update-input-flex {
+        min-width: 0;
+      }
+      .modal-add-update-input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .model-add-update {
+    padding: 0 20px 0 20px;
+
+    .modal-add-update-input-wrapper {
+      gap: 30px;
+      margin-bottom: 1rem;
+
+      .modal-add-update-input-flex {
+        min-width: 0;
+      }
+      .modal-add-update-input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .model-add-update {
+    padding: 0;
+
+    .modal-add-update-input-wrapper {
+      gap: 30px;
+      margin-bottom: 1rem;
+
+      .modal-add-update-input-flex {
+        min-width: 0;
+      }
+      .modal-add-update-input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

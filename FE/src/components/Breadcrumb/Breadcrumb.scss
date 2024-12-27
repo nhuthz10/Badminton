@@ -1,0 +1,48 @@
+.breadcrum-container {
+  position: absolute;
+  top: 8.6rem;
+  left: 2rem;
+  z-index: 1;
+  font-size: var(--text-fontSize);
+  display: flex;
+  flex-wrap: wrap;
+
+  .text {
+    margin-right: 1rem;
+  }
+
+  span {
+    &:hover {
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .breadcrum-container {
+    top: 8.5rem;
+    left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .breadcrum-container {
+    top: 9.5rem;
+    left: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .breadcrum-container {
+    top: 9.5rem;
+    left: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .breadcrum-container {
+    top: 10rem;
+    left: 4rem;
+  }
+}

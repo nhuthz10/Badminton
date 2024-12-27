@@ -1,0 +1,112 @@
+.drawer-nav-container {
+  width: 24rem;
+  height: 100vh;
+  background-color: var(--second-admin-color);
+
+  .drawer-nav-title {
+    text-align: center;
+    background-color: var(--primary-admin-color);
+    font-size: var(--title-small-fontSize);
+    padding: 10px 0;
+    color: var(--white-color);
+    font-weight: 700;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+
+    .arrow-icon {
+      font-size: var(--title-fontSize);
+      transition: transform 0.3s ease;
+      transform: rotate(270deg);
+    }
+
+    .arrow-icon.rotate {
+      transform: rotate(270deg);
+    }
+
+    .arrow-icon.down {
+      transform: rotate(360deg);
+    }
+
+    .menu-item {
+      color: white;
+      padding: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5px;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #4a73ab69;
+        border-radius: 10px;
+      }
+
+      .menu-item-content {
+        display: flex;
+        align-items: center;
+        width: 30rem;
+
+        .icon {
+          font-size: var(--title-fontSize);
+          margin: 0 1rem;
+        }
+
+        .text {
+          font-size: var(--text-fontSize);
+        }
+      }
+    }
+
+    .sub-menu-item {
+      padding: 12px 0;
+      line-height: 1.4;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #4a73ab69;
+        border-radius: 10px;
+      }
+
+      .text {
+        color: white;
+        font-size: var(--text-fontSize);
+        margin-left: 1rem;
+      }
+    }
+
+    .selected {
+      background-color: #4a73ab !important;
+      border-radius: 10px;
+    }
+
+    .sub-menu-container {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transform-origin: top;
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
+
+      &.down {
+        transform-origin: top;
+      }
+
+      &.up {
+        transform-origin: bottom;
+      }
+    }
+
+    .sub-menu-container.open {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+}

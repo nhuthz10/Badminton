@@ -1,0 +1,71 @@
+.notification-container {
+  width: 350px;
+  max-height: 600px;
+  overflow-y: scroll;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 16px 10px 16px 10px;
+
+  .notification-heading {
+    font-size: var(--title-fontSize);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  .notification-filter {
+    display: flex;
+    gap: 10px;
+    font-size: var(--title-small-fontSize);
+    font-weight: 500;
+
+    .notification-filter-item {
+      padding: 6px 8px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &.selected {
+        color: var(--white-color);
+        background-color: var(--second-color);
+      }
+    }
+  }
+
+  .notification-list {
+    margin-top: 16px;
+    .notification-item {
+      position: relative;
+      padding: 14px 26px 14px 14px;
+      border-radius: 5px;
+      font-size: var(--text-fontSize);
+      line-height: 1.2;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--gray-color-2);
+      }
+
+      .notification-see-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+        padding: 6px;
+        background-color: var(--second-color);
+        border-radius: 100%;
+      }
+
+      .notification-time {
+        margin-top: 4px;
+        color: var(--second-color);
+        font-weight: 600;
+        font-size: var(--text-fontSize);
+      }
+
+      .readed {
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+}

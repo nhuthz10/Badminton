@@ -1,0 +1,175 @@
+.page-orders-hitory {
+  // height: 100vh;
+
+  .btn-order-status-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .btn_orderStatus {
+      background-color: #fef3d7;
+      color: #777777;
+      height: 42px;
+      width: 120px;
+      border-radius: 11px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: var(--text-fontSize);
+    }
+
+    .btn_orderStatus:hover {
+      background-color: var(--second-color);
+      color: white;
+    }
+
+    .active {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+  }
+
+  .orders {
+    width: 100%;
+    font-size: var(--text-fontSize);
+    border-collapse: separate;
+    border-spacing: 0 5rem;
+    overflow-y: scroll;
+
+    .order-row {
+      background-color: #f3f3f3;
+
+      .order-index {
+        display: none;
+      }
+
+      .link {
+        color: blue;
+
+        &:hover {
+          color: rgb(2, 2, 85);
+        }
+      }
+
+      td {
+        padding: 0.8rem;
+        line-height: 1.4;
+      }
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .page-orders-hitory {
+    .btn-order-status-container {
+      justify-content: center;
+      gap: 16px;
+
+      .btn_orderStatus {
+        height: 42px;
+        width: 120px;
+      }
+    }
+    .order-row {
+      background-color: #f3f3f3;
+
+      .order-index {
+        display: block;
+      }
+
+      td {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-orders-hitory {
+    .btn-order-status-container {
+      justify-content: center;
+      gap: 60px;
+
+      .btn_orderStatus {
+        height: 45px;
+        width: 130px;
+      }
+    }
+    .order-row {
+      background-color: #f3f3f3;
+
+      .order-index {
+        display: block;
+      }
+
+      td {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .page-orders-hitory {
+    .btn-order-status-container {
+      justify-content: center;
+      gap: 100px;
+
+      .btn_orderStatus {
+        height: 45px;
+        width: 130px;
+      }
+    }
+    .order-row {
+      background-color: #f3f3f3;
+
+      .order-index {
+        display: block;
+      }
+
+      td {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-orders-hitory {
+    .btn-order-status-container {
+      justify-content: center;
+      gap: 120px;
+
+      .btn_orderStatus {
+        height: 45px;
+        width: 130px;
+      }
+    }
+    .orders {
+      width: 100%;
+      font-size: var(--text-fontSize);
+      border-collapse: separate;
+      border-spacing: 0 5rem;
+
+      .order-row {
+        background-color: #f3f3f3;
+
+        .order-index {
+          display: block;
+        }
+
+        td {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}

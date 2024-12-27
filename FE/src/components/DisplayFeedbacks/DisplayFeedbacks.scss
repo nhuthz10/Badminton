@@ -1,0 +1,54 @@
+.feedback-product-container {
+  .comment-rating-form {
+    margin: 0 0 10px 0;
+    min-height: 500px;
+
+    .review-item {
+      background: #eee;
+      padding: 20px 16px 34px 16px;
+      margin-bottom: 16px;
+      border-radius: 20px;
+      position: relative;
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        .user-avatar {
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 100%;
+          margin-right: 14px;
+        }
+        .wrap-user-name {
+          font-size: var(--title-small-fontSize);
+          display: flex;
+          flex-direction: column;
+          .user-name {
+            margin-bottom: 6px;
+          }
+        }
+      }
+      .user-comment {
+        font-size: var(--text-fontSize);
+      }
+      .edit-feedback {
+        position: absolute;
+        bottom: 8px;
+        right: 14px;
+        display: flex;
+        font-size: 1.8rem;
+
+        .edit-feedback-btn {
+          font-size: var(--text-fontSize);
+          padding: 6px 8px;
+
+          &:hover {
+            cursor: pointer;
+            color: var(--second-color);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.favourite-container {
+  .productWrapper {
+    display: block;
+    position: relative;
+    border: 0.1rem solid var(--gray-color);
+    border-radius: 3rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 8px #0000001a;
+    }
+
+    .productImg {
+      width: 100%;
+      height: 450px;
+      border-top-right-radius: 3rem;
+      border-top-left-radius: 3rem;
+      object-fit: contain;
+    }
+
+    .favorite {
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+
+      .icon {
+        font-size: 2.2rem;
+        color: var(--primary-color);
+      }
+    }
+
+    .productInfo {
+      padding: 0px 20px 20px 20px;
+    }
+
+    .productName {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.4;
+      min-height: 4rem;
+      font-size: var(--text-fontSize);
+      margin-top: 1rem;
+    }
+
+    .productRating {
+      font-size: var(--text-fontSize);
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+
+      p {
+        margin-left: 1rem;
+      }
+    }
+
+    .productPrice {
+      display: flex;
+      font-size: var(--text-fontSize);
+      color: red;
+      margin-top: 1rem;
+    }
+
+    .noProduct {
+      height: 69%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: large;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .no-product {
+    min-height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .favourite-container {
+    .productWrapper {
+      .productImg {
+        width: 100%;
+        height: 400px;
+        border-top-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .favourite-container {
+    .productWrapper {
+      .productImg {
+        width: 100%;
+        height: 400px;
+        border-top-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .favourite-container {
+    .productWrapper {
+      .productImg {
+        width: 100%;
+        height: 400px;
+        border-top-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .favourite-container {
+    .productWrapper {
+      .productImg {
+        width: 100%;
+        height: 400px;
+        border-top-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
+}

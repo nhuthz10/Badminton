@@ -1,0 +1,14 @@
+.product-type-item {
+  display: block;
+  padding: 1.2rem 1.5rem;
+
+  &:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  p {
+    font-size: var(--text-fontSize);
+    font-weight: 600;
+  }
+}
